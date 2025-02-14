@@ -35,3 +35,13 @@ console.log(personas2);
 
 let suma = 0; let numero = 1; 
 while (suma < 5) { suma += numero; numero++; } console.log(suma);
+
+
+
+for (let i = 0; i < 3; i++) { console.log("Hola"); }
+
+let suma2 = 0; for (let i = 1; i <= 5; i++) { suma2 += i; } console.log(suma2);
+
+
+let frutas = ['manzana', 'fresa', 'naranja'];
+console.log(frutas[2]);  

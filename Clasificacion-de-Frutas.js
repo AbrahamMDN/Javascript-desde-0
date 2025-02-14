@@ -20,4 +20,4 @@ for (let indice = 0; indice <frutas.length;indice++){
 console.log("Conteo de frutas usando ciclo for");
 for(let fruta in conteoFrutas){
     console.log(`${fruta}:${conteoFrutas[fruta]}`);
-}
+} //Comillas inversas o Backsticks
