@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Añado Biblioteca Bootstrap para íconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    
+    <!--Cuerpo del Elemento-->
+    <div class="generator">
+        <!--Título y espacio para contraseña generada-->
+        <div class="password-container">
+            <h2>Password Generator</h2>
+            <h1><i class="bi bi-cone-striped"></i><i class="bi bi-cone-striped"></i></h1>
+        </div>
+        <!--Botones-->
+        <form>
+            <label for="input-password-lenght">Longitud de la contraseña</label>
+            <!--Barra para número de caracteres-->
+            <div class="range-container">
+                <input type="range" min="1" max="20" id="input-password-lenght" value="8">
+                <h1>8</h1>
+            </div>
+            <!--Tipo de caracteres-->
+            <div class="options">
+                <label>
+                    <input type="checkbox" id="uppercase" checked> Mayúsculas <i class="bi bi-alphabet-uppercase"></i>
+                </label>
+                <label>
+                    <input type="checkbox" id="lowercase" checked> Minúsculas <i class="bi bi-alphabet"></i>
+                </label>
+                <label>
+                    <input type="checkbox" id="numbers" checked> Números <i class="bi bi-123"></i>
+                </label>
+                <label>
+                    <input type="checkbox" id="symbols" checked> Símbolos <i class="bi bi-hash"></i><i class="bi bi-at"></i>
+                </label>
+            </div>
+            <!--Botón para generar contraseña-->
+            <button type="submit">Generar <i class="bi bi-arrow-right-short"></i></button>
+        </form>
+        <!--Evaluación de seguridad -->
+        <div id="password-strength" class="password-strength">
+            Seguridad de la contraseña <i class="bi bi-shield-lock-fill"></i>: <span id="strength-label">Desconocida</span>
+        </div>
+        <!--Evaluación de seguridad con barras-->
+        <div class="password-strength">
+            <div id="strength-bars" class="strength-bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; 
+    color: #e0e0e0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.generator {
+    background-color: #1f1f1f; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Formato para contraseña generada y número de caracteres */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #a9b5e7;
+}
+
+/*Formato de título principal*/
+h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #9e9e9e;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el control deslizante */
+.range-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #291b60e6;
+    appearance: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+input[type="range"]:hover {
+    background-color: #48317b; 
+}
+
+/* Formato de opciones */
+.options {
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.options label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    color: #e0e0e0;
+}
+
+.options input {
+    position: absolute; /*Posición absoluta*/
+    left: 0;
+    top: 2px;
+}
+
+.options input:checked {
+    box-shadow: 0 0 10px #5a40c2e6; /*Contorno de los checkboxes*/
+}
+
+/* Botón para generar contraseña*/
+button {
+    background-color: #5a40c2e6;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #472fa6e6;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Estilo para la contraseña generada */
+#generated-password {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #e0e0e0; 
+}
+
+/* Animaciones */
+button, input[type="range"] {
+    transition: transform 0.3s ease;
+}
+
+button:hover, input[type="range"]:hover {
+    transform: translateY(-5px);
+}
+
+input[type="range"]:focus {
+    outline: 2px solid #82c9ff;
+}
+
+/* Estilo para el contenedor del formulario */
+form {
+    margin-top: 30px;
+}
+
+/* Estilo para la calificación de seguridad */
+.password-strength {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+.password-strength #strength-label {
+    font-weight: bold;
+    color: #e73c7e;
+}
+
+/* Estilo para las barras de calificación de seguridad */
+.strength-bars {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.strength-bars .bar {
+    width: 30%;
+    height: 10px;
+    background-color: #ddd;
+    transition: background-color 0.3s ease;
+}
+
+/* Colores de las barras dependiendo de la seguridad */
+.strength-bars .weak {
+    background-color: #1f1f1f;
+}
+
+.strength-bars .strong {
+    background-color: #11f4d6;
+}
