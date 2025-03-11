@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo General */
+body {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+p {
+    padding-top: 40px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Estilos específicos */
+header {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #34495e;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#form-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #ecf0f1;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #7f8c8d;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+form input:focus, form select:focus, form button:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+form button {
+    background-color: #4a73cb;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 25%; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+form button:hover {
+    background-color: #2156c9;
+}
+
+button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.eliminate-button {
+    background-color: #e03d3d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.eliminate-button:hover {
+    background-color: #de1919;
+}
+
+#book-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+section {
+    padding: 15px;
+    background-color: #1c2833;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+section span {
+    color: #bdc3c7;
+    font-size: 0.9em;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    form input, form select, form button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Práctica 8</title>
+</head>
+<body>
+    <header>
+        <h1>Proyecto Final: Seguimiento Libros</h1>
+    </header>
+
+    <p>Descripción: Formulario dinámico para el seguimiento de libros disponibles, prestados, o sin existencia en el catálogo.</p>
+
+    <main>
+        <!-- Contenedor Principal -->
+        <section> 
+            <h2 id="form-title">Formulario de Libros</h2>
+            <form id="form-books">
+                <label for="title">Título del libro:</label>
+                <input type="text" id="title" placeholder="Ingrese el título..." required>
+    
+                <label for="author">Autor del libro:</label>
+                <input type="text" id="author" placeholder="Ingrese el autor..." required>
+
+                <label for="year">Año de publicación:</label>
+                <input type="text" id="year" placeholder="Ingrese el año de publicación..." required>
+    
+                <label for="availability">Estado:</label>
+                <select id="availability" required>
+                    <option value="" disabled selected>Ingrese el estado</option>
+                    <option value="available">Disponible</option>
+                    <option value="lent">Prestado</option>
+                    <option value="out-of-stock">No hay existencia</option>
+                </select>
+    
+                <button type="submit">Agregar libro</button>
+            </form>
+        </section>
+    
+        <!-- Contenedor de etiquetas -->
+        <section id="book-container">
+            <h2 id="list-title">Catálogo actualizado</h2>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
